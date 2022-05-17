@@ -22,8 +22,6 @@ xRoots = []
 yRoots = []
 xDistsFromCen = []
 yDistsFromCen = []
-#image files
-sand = pygame.image.load('/home/pi/Desktop/ASSETS/sandLayer.png')
 #control tide animation - bob is the actual variable that is used and wave is the template that changes.
 bob = 0
 wave = 0
