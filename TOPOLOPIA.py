@@ -1,5 +1,3 @@
-#DANIEL BRANNON
-#2022
 import pygame
 from random import randint, choice
 import math
@@ -9,7 +7,6 @@ screen = pygame.display.set_mode((600, 600))
 pygame.display.set_caption("TOPOLOPIA")
 screen.fill((0, 0, 100))
 pygame.display.update()
-player = pygame.image.load('/home/pi/Desktop/ASSETS/explorer.png')
 x = 0
 y = 0
 alt = 0
@@ -22,6 +19,7 @@ xRoots = []
 yRoots = []
 xDistsFromCen = []
 yDistsFromCen = []
+#image files
 #control tide animation - bob is the actual variable that is used and wave is the template that changes.
 bob = 0
 wave = 0
@@ -71,8 +69,8 @@ while True:
         pygame.time.delay(10)
         for event in pygame.event.get():
             mousex, mousey = pygame.mouse.get_pos()
-            xLead = round((mousex-300)/(250 - (5*alt) - islandSize))
-            yLead = round((mousey-300)/(250 - (5*alt) - islandSize))
+            xLead = round((mousex-300)/(200-(5*alt) - islandSize))
+            yLead = round((mousey-300)/(200-(5*alt) - islandSize))
             if event.type == pygame.QUIT:
                 pygame.display.quit()
                 pygame.quit()
